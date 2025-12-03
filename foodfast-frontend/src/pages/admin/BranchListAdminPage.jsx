@@ -22,11 +22,7 @@ const BranchListAdminPage = () => {
     });
 
     // State Form Admin (Mới)
-<<<<<<< HEAD
     const [createAdmin, setCreateAdmin] = useState(false);
-=======
-    const [createAdmin, setCreateAdmin] = useState(false); // Checkbox để bật/tắt
->>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
     const [adminData, setAdminData] = useState({
         name: '',
         email: '',
@@ -70,11 +66,7 @@ const BranchListAdminPage = () => {
                 phoneNumber: branch.phoneNumber || '',
                 operatingHours: branch.operatingHours || ''
             });
-<<<<<<< HEAD
             setCreateAdmin(false);
-=======
-            setCreateAdmin(false); // Không tạo admin khi đang sửa chi nhánh
->>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
         } else {
             setEditingBranch(null);
             setFormData({ name: '', address: '', lat: '', lng: '', phoneNumber: '', operatingHours: '8:00 - 22:00' });
@@ -86,13 +78,29 @@ const BranchListAdminPage = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        // --- BẮT ĐẦU: KIỂM TRA TRÙNG TÊN ---
+        const inputName = formData.name.trim().toLowerCase();
+
+        const isDuplicate = branches.some(branch => {
+            // Nếu đang ở chế độ Sửa (editingBranch != null)
+            // thì bỏ qua chi nhánh có cùng _id với chi nhánh đang sửa
+            if (editingBranch && branch._id === editingBranch._id) {
+                return false;
+            }
+            // So sánh tên
+            return branch.name.trim().toLowerCase() === inputName;
+        });
+
+        if (isDuplicate) {
+            alert(`Tên chi nhánh "${formData.name}" đã tồn tại! Vui lòng đặt tên khác.`);
+            return; // Dừng hàm, không gửi request
+        }
+        // --- KẾT THÚC: KIỂM TRA TRÙNG TÊN ---
+
         try {
             const config = { headers: { Authorization: `Bearer ${userInfo.token}` } };
 
-<<<<<<< HEAD
-=======
-            // 1. Tạo/Sửa Chi Nhánh
->>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
             const payload = {
                 ...formData,
                 location: {
@@ -107,34 +115,19 @@ const BranchListAdminPage = () => {
                 await axios.put(`${API_URL}/api/branches/${editingBranch._id}`, payload, config);
                 alert('Cập nhật chi nhánh thành công!');
             } else {
-<<<<<<< HEAD
                 const { data: newBranch } = await axios.post(`${API_URL}/api/branches`, payload, config);
                 branchId = newBranch._id;
 
-=======
-                // Tạo mới -> Lấy ID trả về
-                const { data: newBranch } = await axios.post(`${API_URL}/api/branches`, payload, config);
-                branchId = newBranch._id;
-
-                // 2. Tạo tài khoản Admin cho chi nhánh này (Nếu được tích chọn)
->>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
                 if (createAdmin && branchId) {
                     try {
                         await axios.post(`${API_URL}/api/users/register`, {
                             name: adminData.name,
                             email: adminData.email,
                             password: adminData.password,
-<<<<<<< HEAD
                             isAdmin: true,
                             branchId: branchId
                         });
                         alert(`Đã tạo chi nhánh "${newBranch.name}" và tài khoản admin thành công!`);
-=======
-                            isAdmin: true,      // Set quyền Admin
-                            branchId: branchId  // Gắn với chi nhánh vừa tạo
-                        });
-                        alert(`Đã tạo chi nhánh "${newBranch.name}" và tài khoản admin "${adminData.email}" thành công!`);
->>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
                     } catch (userErr) {
                         console.error(userErr);
                         alert(`Tạo chi nhánh thành công nhưng lỗi khi tạo Admin: ${userErr.response?.data?.message}`);
@@ -151,7 +144,6 @@ const BranchListAdminPage = () => {
         }
     };
 
-<<<<<<< HEAD
     // --- [SỬA LỖI TẠI ĐÂY] ---
     const toggleStatusHandler = async (branch) => {
         const action = branch.isActive ? 'TẠM ĐÓNG CỬA' : 'MỞ CỬA LẠI';
@@ -223,17 +215,6 @@ const BranchListAdminPage = () => {
 
         } catch (err) {
             alert('Lỗi khi xóa chi nhánh: ' + (err.response?.data?.message || err.message));
-=======
-    const handleDelete = async (id) => {
-        if (window.confirm('Bạn có chắc chắn muốn xóa chi nhánh này?')) {
-            try {
-                const config = { headers: { Authorization: `Bearer ${userInfo.token}` } };
-                await axios.delete(`${API_URL}/api/branches/${id}`, config);
-                fetchBranches();
-            } catch (err) {
-                alert('Lỗi khi xóa chi nhánh');
-            }
->>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
         }
     };
 
@@ -241,17 +222,12 @@ const BranchListAdminPage = () => {
         <div className="container mx-auto p-6">
             <div className="flex justify-between items-center mb-6">
                 <h1 className="text-3xl font-bold text-gray-800">Quản Lý Chi Nhánh</h1>
-<<<<<<< HEAD
                 <button onClick={() => openModal()} className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded flex items-center shadow-md transition-transform hover:scale-105">
-=======
-                <button onClick={() => openModal()} className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded flex items-center shadow-md">
->>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
                     <span className="mr-2 text-xl">+</span> Thêm Chi Nhánh
                 </button>
             </div>
 
             {loading ? <div className="text-center py-10">Đang tải dữ liệu...</div> : (
-<<<<<<< HEAD
                 <div className="bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
                     <table className="min-w-full leading-normal">
                         <thead>
@@ -259,30 +235,16 @@ const BranchListAdminPage = () => {
                                 <th className="py-3 px-6 text-left">Tên Chi Nhánh</th>
                                 <th className="py-3 px-6 text-left">Địa Chỉ</th>
                                 <th className="py-3 px-6 text-center">Trạng Thái</th>
-=======
-                <div className="bg-white shadow-md rounded-lg overflow-hidden">
-                    <table className="min-w-full leading-normal">
-                        <thead>
-                            <tr className="bg-gray-100 text-gray-600 uppercase text-sm leading-normal">
-                                <th className="py-3 px-6 text-left">Tên Chi Nhánh</th>
-                                <th className="py-3 px-6 text-left">Địa Chỉ</th>
-                                <th className="py-3 px-6 text-center">Tọa Độ</th>
->>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
                                 <th className="py-3 px-6 text-center">Hành Động</th>
                             </tr>
                         </thead>
                         <tbody className="text-gray-600 text-sm font-light">
                             {branches.map((branch) => (
-<<<<<<< HEAD
                                 <tr key={branch._id} className={`border-b border-gray-200 hover:bg-gray-50 transition-colors ${!branch.isActive ? 'bg-gray-100' : ''}`}>
-=======
-                                <tr key={branch._id} className="border-b border-gray-200 hover:bg-gray-50 transition-colors">
->>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
                                     <td className="py-3 px-6 text-left font-medium text-indigo-600">
                                         {branch.name}
                                     </td>
                                     <td className="py-3 px-6 text-left">
-<<<<<<< HEAD
                                         <p className="truncate max-w-xs" title={branch.address}>{branch.address}</p>
                                         <p className="text-xs text-gray-400 mt-1">Hotline: {branch.phoneNumber || '---'}</p>
                                     </td>
@@ -307,20 +269,6 @@ const BranchListAdminPage = () => {
                                             </button>
 
                                             <button onClick={() => handleDelete(branch)} className="transform hover:text-red-500 hover:scale-110 transition" title="Xóa vĩnh viễn">
-=======
-                                        <p>{branch.address}</p>
-                                        <p className="text-xs text-gray-400 mt-1">Hotline: {branch.phoneNumber || '---'}</p>
-                                    </td>
-                                    <td className="py-3 px-6 text-center font-mono text-xs">
-                                        [{branch.location?.coordinates[1]}, {branch.location?.coordinates[0]}]
-                                    </td>
-                                    <td className="py-3 px-6 text-center">
-                                        <div className="flex item-center justify-center gap-3">
-                                            <button onClick={() => openModal(branch)} className="transform hover:text-indigo-500 hover:scale-110 transition">
-                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
-                                            </button>
-                                            <button onClick={() => handleDelete(branch._id)} className="transform hover:text-red-500 hover:scale-110 transition">
->>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
                                             </button>
                                         </div>
@@ -335,20 +283,12 @@ const BranchListAdminPage = () => {
             {/* MODAL FORM */}
             {isModalOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 backdrop-blur-sm">
-<<<<<<< HEAD
                     <div className="bg-white p-6 rounded-lg shadow-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto animate-fade-in-up">
-=======
-                    <div className="bg-white p-6 rounded-lg shadow-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto">
->>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
                         <h2 className="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">
                             {editingBranch ? 'Cập nhật Chi Nhánh' : 'Thêm Chi Nhánh Mới'}
                         </h2>
 
                         <form onSubmit={handleSubmit}>
-<<<<<<< HEAD
-=======
-                            {/* Phần 1: Thông tin Chi Nhánh */}
->>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                                 <div className="md:col-span-2">
                                     <label className="block text-gray-700 text-sm font-bold mb-2">Tên Chi Nhánh</label>
@@ -376,10 +316,6 @@ const BranchListAdminPage = () => {
                                 </div>
                             </div>
 
-<<<<<<< HEAD
-=======
-                            {/* Phần 2: Tạo tài khoản Admin (Chỉ hiện khi tạo mới) */}
->>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
                             {!editingBranch && (
                                 <div className="mt-6 p-4 bg-indigo-50 rounded-lg border border-indigo-100">
                                     <div className="flex items-center mb-4">
@@ -415,17 +351,10 @@ const BranchListAdminPage = () => {
                             )}
 
                             <div className="flex justify-end gap-3 mt-6 pt-4 border-t">
-<<<<<<< HEAD
                                 <button type="button" onClick={() => setIsModalOpen(false)} className="bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 font-bold py-2 px-4 rounded shadow-sm transition-colors">
                                     Hủy bỏ
                                 </button>
                                 <button type="submit" className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded shadow-md transition-colors">
-=======
-                                <button type="button" onClick={() => setIsModalOpen(false)} className="bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 font-bold py-2 px-4 rounded shadow-sm">
-                                    Hủy bỏ
-                                </button>
-                                <button type="submit" className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded shadow-md">
->>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
                                     {editingBranch ? 'Cập nhật' : 'Tạo Chi Nhánh'}
                                 </button>
                             </div>
