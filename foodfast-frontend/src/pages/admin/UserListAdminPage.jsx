@@ -12,11 +12,16 @@ const UserListAdminPage = () => {
         try {
             setLoading(true);
             const config = { headers: { Authorization: `Bearer ${userInfo.token}` } };
+<<<<<<< HEAD
             // 1. Khai báo URL (nếu chưa có trong component)
             const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000';
 
             // 2. Sửa dòng gọi API
             const { data } = await axios.get(`${API_URL}/api/users`, config);            setUsers(data);
+=======
+            const { data } = await axios.get('http://localhost:3000/api/users', config);
+            setUsers(data);
+>>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
         } catch (err) {
             setError('Không thể tải danh sách người dùng.');
         } finally {

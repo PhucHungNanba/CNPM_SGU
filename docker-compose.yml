@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
 ﻿services:
   
   # 1. API GATEWAY (Cổng vào chính)
@@ -140,4 +144,136 @@ networks:
 # Định nghĩa "ổ đĩa ảo"
 volumes:
   mongo-data:
+<<<<<<< HEAD
+=======
+=======
+﻿services:
+  
+  # 1. API GATEWAY (Cổng vào chính)
+  api-gateway:
+    build:
+      context: ./api-gateway
+    container_name: api-gateway
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+    depends_on:
+      - user-service
+      - product-service
+      - order-service
+      - payment-service
+      - delivery-service
+    networks:
+      - foodfast-network
+
+  # 2. USER SERVICE (Quản lý người dùng)
+  user-service:
+    build:
+      context: ./user-service
+    container_name: user-service
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+      # Kết nối nội bộ Docker vẫn dùng cổng 27017
+      - MONGO_URI=mongodb://mongo:27017/foodfast-user-service 
+      - JWT_SECRET=${JWT_SECRET}
+    depends_on:
+      - mongo
+    networks:
+      - foodfast-network
+
+  # 3. PRODUCT SERVICE (Quản lý sản phẩm)
+  product-service:
+    build:
+      context: ./product-service
+    container_name: product-service
+    ports:
+      - "3002:3002"
+    environment:
+      - PORT=3002
+      - MONGO_URI=mongodb://mongo:27017/foodfast-product-service
+      - JWT_SECRET=${JWT_SECRET}
+    depends_on:
+      - mongo
+    networks:
+      - foodfast-network
+
+  # 4. ORDER SERVICE (Quản lý đơn hàng)
+  order-service:
+    build:
+      context: ./order-service
+    container_name: order-service
+    ports:
+      - "3003:3003"
+    environment:
+      - PORT=3003
+      - MONGO_URI=mongodb://mongo:27017/foodfast-order-service
+      - JWT_SECRET=${JWT_SECRET}
+      # --- THÊM DÒNG NÀY VÀO ---
+      - PRODUCT_SERVICE_URL=http://product-service:3002 
+    depends_on:
+      - mongo
+      - product-service
+    networks:
+      - foodfast-network
+
+  # 5. PAYMENT SERVICE (Xử lý thanh toán)
+  payment-service:
+    build:
+      context: ./payment-service
+    container_name: payment-service
+    ports:
+      - "3004:3004"
+    environment:
+      - PORT=3004
+      - ORDER_SERVICE_URL=http://order-service:3003
+    depends_on:
+      - order-service
+    networks:
+      - foodfast-network
+
+  # 6. DELIVERY SERVICE (Xử lý giao hàng)
+  delivery-service:
+    build:
+      context: ./delivery-service
+    container_name: delivery-service
+    ports:
+      - "3005:3005"
+    environment:
+      - PORT=3005
+      - MONGO_URI=mongodb://mongo:27017/foodfast-delivery-service
+      - ORDER_SERVICE_URL=http://order-service:3003
+    depends_on:
+      - mongo
+      - order-service
+    networks:
+      - foodfast-network
+
+  
+
+  # 8. DATABASE (MongoDB)
+  mongo:
+    image: mongo:latest
+    container_name: mongo-db
+    ports:
+      # --- ĐÂY LÀ DÒNG QUAN TRỌNG ---
+      # Mở cổng 27017 (bên trong Docker) ra cổng 27018 (trên máy thật)
+      - "27018:27017"
+    volumes:
+      - mongo-data:/data/db # Sử dụng "ổ đĩa ảo" của Docker
+    networks:
+      - foodfast-network
+
+# Định nghĩa mạng chung
+networks:
+  foodfast-network:
+    driver: bridge
+
+# Định nghĩa "ổ đĩa ảo"
+volumes:
+  mongo-data:
+>>>>>>> 62d0cde0a996486415924094f6084c5fdfeab9e8
+>>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
     driver: local

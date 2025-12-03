@@ -15,7 +15,15 @@ const ProductDetailPage = () => {
         const fetchProduct = async () => {
             setLoading(true);
             try {
+<<<<<<< HEAD
                 const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/products/${id}`);
+=======
+<<<<<<< HEAD
+                const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/products/${id}`);
+=======
+                const response = await axios.get(`http://localhost:3000/api/products/${id}`);
+>>>>>>> 62d0cde0a996486415924094f6084c5fdfeab9e8
+>>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
                 setProduct(response.data);
             } catch (err) {
                 setError('Không thể tải dữ liệu sản phẩm.');

@@ -35,11 +35,22 @@ const LoginPage = () => {
         setLoading(true); // Bắt đầu loading
 
         try {
+<<<<<<< HEAD
             const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000';
 
             const { data } = await axios.post(`${API_URL}/api/users/login`, { email, password });
 
             // Lưu thông tin vào Context
+=======
+<<<<<<< HEAD
+            const { data } = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/users/login`, { email, password });
+=======
+            const { data } = await axios.post('http://localhost:3000/api/users/login', {
+                email,
+                password,
+            });
+>>>>>>> 62d0cde0a996486415924094f6084c5fdfeab9e8
+>>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
             login(data);
 
             // 2. XỬ LÝ CHUYỂN HƯỚNG NGAY SAU KHI LOGIN THÀNH CÔNG

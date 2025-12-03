@@ -31,8 +31,12 @@ const BranchModal = ({ onBranchSelected, forceOpen = false }) => {
     const fetchBranches = async () => {
         try {
             setLoading(true);
+<<<<<<< HEAD
             // SỬA DÒNG NÀY: Thêm ?active=true
             const { data } = await axios.get(`${API_URL}/api/branches?active=true`);
+=======
+            const { data } = await axios.get(`${API_URL}/api/branches`);
+>>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
             setBranches(data);
         } catch (err) {
             setError('Không thể tải danh sách chi nhánh. Vui lòng kiểm tra kết nối.');

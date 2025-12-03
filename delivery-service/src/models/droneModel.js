@@ -1,6 +1,7 @@
 ﻿import mongoose from 'mongoose';
 
 const droneSchema = new mongoose.Schema({
+<<<<<<< HEAD
     name: { type: String, required: true }, // Ví dụ: Drone-Alpha-01
     model: { type: String, default: 'DJI Delivery X1' },
     status: {
@@ -18,3 +19,25 @@ const droneSchema = new mongoose.Schema({
 }, { timestamps: true });
 
 export default mongoose.model('Drone', droneSchema);
+=======
+    name: {
+        type: String,
+        required: true,
+        unique: true,
+    },
+    status: {
+        type: String,
+        required: true,
+        // 'available': rảnh, 'busy': đang giao, 'maintenance': đang bảo trì
+        enum: ['available', 'busy', 'maintenance'],
+        default: 'available',
+    },
+    currentOrderId: {
+        type: String,
+        default: null,
+    },
+}, { timestamps: true });
+
+const Drone = mongoose.model('Drone', droneSchema);
+export default Drone;
+>>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345

@@ -198,6 +198,7 @@ Hệ thống xử lý các nghiệp vụ phức tạp bằng cơ chế sự ki�
     *Khởi chạy hạ tầng (Kafka, Zookeeper, PostgreSQL, Grafana...)*
 
     ```bash
+<<<<<<< HEAD
     docker-compose up -d
     ```
 
@@ -206,6 +207,16 @@ Hệ thống xử lý các nghiệp vụ phức tạp bằng cơ chế sự ki�
 
     ```bash
     ./mvnw spring-boot:run
+=======
+    docker-compose up --build
+    ```
+
+4.  **Chạy Frontend:**
+    Mở Terminal cho thư mục foodfast-frontend và chạy:
+
+    ```bash
+    npm run dev
+>>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
     ```
 
 5.  **Dừng hệ thống:**

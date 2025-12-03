@@ -19,6 +19,7 @@ mongoose.connect(process.env.MONGO_URI)
 
 // --- 1. ĐỊNH NGHĨA MODEL (Branch) ---
 const branchSchema = new mongoose.Schema({
+<<<<<<< HEAD
     name: { type: String, required: true },
     address: { type: String, required: true },
     location: {
@@ -35,6 +36,38 @@ const branchSchema = new mongoose.Schema({
     }
 }, { timestamps: true });
 
+=======
+    name: {
+        type: String,
+        required: true,
+    },
+    address: {
+        type: String,
+        required: true,
+    },
+    // Cấu trúc GeoJSON để lưu trữ tọa độ
+    location: {
+        type: {
+            type: String,
+            enum: ['Point'], // Bắt buộc phải là 'Point'
+            required: true
+        },
+        coordinates: {
+            type: [Number], // Định dạng: [Kinh độ (Lng), Vĩ độ (Lat)]
+            required: true
+        }
+    },
+    operatingHours: {
+        type: String,
+        default: '9:00 AM - 10:00 PM'
+    },
+    phoneNumber: String,
+}, {
+    timestamps: true // Tự động thêm createdAt, updatedAt
+});
+
+// [RẤT QUAN TRỌNG] Tạo chỉ mục 2dsphere cho tìm kiếm vị trí
+>>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
 branchSchema.index({ location: '2dsphere' });
 
 const Branch = mongoose.model('Branch', branchSchema);
@@ -44,6 +77,7 @@ const Branch = mongoose.model('Branch', branchSchema);
 // Tạo chi nhánh mới
 const createBranch = async (req, res) => {
     try {
+<<<<<<< HEAD
         // 1. Lấy dữ liệu từ body
         const { name, address, lat, lng, phoneNumber, operatingHours } = req.body;
 
@@ -80,12 +114,25 @@ const createBranch = async (req, res) => {
             message: 'Không thể tạo chi nhánh',
             error: error.message
         });
+=======
+        // Dữ liệu mẫu khi gửi lên:
+        // {
+        //    "name": "FoodFast Quận 1",
+        //    "address": "123 Nguyễn Huệ...",
+        //    "location": { "type": "Point", "coordinates": [106.70, 10.77] }
+        // }
+        const branch = await Branch.create(req.body);
+        res.status(201).json(branch);
+    } catch (error) {
+        res.status(400).json({ message: 'Lỗi khi tạo chi nhánh', error: error.message });
+>>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
     }
 };
 
 // Lấy tất cả chi nhánh
 const getAllBranches = async (req, res) => {
     try {
+<<<<<<< HEAD
         // 1. Lấy tham số 'active' từ URL (VD: /api/branches?active=true)
         const { active } = req.query;
 
@@ -99,6 +146,9 @@ const getAllBranches = async (req, res) => {
         // 3. Tìm kiếm với điều kiện lọc (nếu có)
         const branches = await Branch.find(query);
 
+=======
+        const branches = await Branch.find({});
+>>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
         res.status(200).json(branches);
     } catch (error) {
         res.status(500).json({ message: 'Lỗi khi lấy danh sách chi nhánh', error: error.message });
@@ -153,9 +203,13 @@ const findNearestBranch = async (req, res) => {
 
 const updateBranch = async (req, res) => {
     try {
+<<<<<<< HEAD
         // 1. Thêm isActive vào danh sách biến lấy từ req.body
         const { name, address, lat, lng, phoneNumber, operatingHours, isActive } = req.body;
 
+=======
+        const { name, address, lat, lng, phoneNumber, operatingHours } = req.body;
+>>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
         const branch = await Branch.findById(req.params.id);
 
         if (branch) {
@@ -164,6 +218,7 @@ const updateBranch = async (req, res) => {
             branch.phoneNumber = phoneNumber || branch.phoneNumber;
             branch.operatingHours = operatingHours || branch.operatingHours;
 
+<<<<<<< HEAD
             // --- [ĐOẠN CODE CẦN THÊM VÀO] ---
             // Kiểm tra xem isActive có được gửi lên không (vì nó là boolean true/false)
             if (isActive !== undefined) {
@@ -171,6 +226,8 @@ const updateBranch = async (req, res) => {
             }
             // -------------------------------
 
+=======
+>>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
             // Cập nhật tọa độ nếu có
             if (lat && lng) {
                 branch.location = {
