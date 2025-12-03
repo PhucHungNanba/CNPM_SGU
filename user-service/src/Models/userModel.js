@@ -1,7 +1,4 @@
-﻿// user-service/src/models/userModel.js
-
-// Thay thế require bằng import
-import mongoose from 'mongoose';
+﻿import mongoose from 'mongoose';
 import bcrypt from 'bcryptjs';
 
 const userSchema = new mongoose.Schema(
@@ -25,12 +22,32 @@ const userSchema = new mongoose.Schema(
             required: true,
             default: false,
         },
+        // --- PHÂN QUYỀN CHI NHÁNH ---
+        branchId: {
+            type: String,
+            default: null,
+            // Lưu ý logic: 
+            // - Nếu null: Là Super Admin (Xem được tất cả chi nhánh)
+            // - Nếu có ID: Là Admin của chi nhánh đó (Chỉ xem được đơn hàng của chi nhánh đó)
+        },
+        // --- THÔNG TIN BỔ SUNG ---
+        phone: {
+            type: String,
+            required: false, // Nên để false để tránh lỗi khi tạo user cũ chưa có sđt
+            default: '',
+        },
     },
     {
-        timestamps: true,
+        timestamps: true, // Tự động thêm createdAt và updatedAt
     }
 );
 
+// Phương thức kiểm tra mật khẩu (BẮT BUỘC PHẢI CÓ cho chức năng đăng nhập)
+userSchema.methods.matchPassword = async function (enteredPassword) {
+    return await bcrypt.compare(enteredPassword, this.password);
+};
+
+// Middleware: Tự động mã hóa mật khẩu trước khi lưu
 userSchema.pre('save', async function (next) {
     if (!this.isModified('password')) {
         return next();
@@ -41,6 +58,4 @@ userSchema.pre('save', async function (next) {
 });
 
 const User = mongoose.model('User', userSchema);
-
-// Thay thế module.exports bằng export default
 export default User;

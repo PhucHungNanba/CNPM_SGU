@@ -7,44 +7,52 @@ dotenv.config();
 
 const app = express();
 
-// Sử dụng CORS để cho phép frontend gọi tới
 app.use(cors());
 
-// Middleware để ghi log mọi request đến Gateway
 app.use((req, res, next) => {
     console.log(`[Gateway] Received request: ${req.method} ${req.originalUrl}`);
     next();
 });
 
-// Định nghĩa các route và service tương ứng
 const services = [
     {
         route: '/api/users',
-        target: 'http://localhost:3001',
+        target: 'http://user-service:3001',
     },
     {
         route: '/api/products',
-        target: 'http://localhost:3002',
+        target: 'http://product-service:3002',
     },
     {
         route: '/api/orders',
-        target: 'http://localhost:3003',
+        target: 'http://order-service:3003',
     },
     {
         route: '/api/payments',
-        target: 'http://localhost:3004',
+        target: 'http://payment-service:3004',
+    },
+    {
+        route: '/api/drones',
+        target: 'http://delivery-service:3005',
+    },
+    // --- THÊM BRANCH SERVICE VÀO ĐÂY ---
+    {
+        route: '/api/branches',
+        // Nếu chạy docker thì dùng 'http://branch-service:3006'
+        // Nếu chạy node thường trên máy thì dùng 'http://localhost:3006'
+        target: process.env.BRANCH_SERVICE_URL || 'http://branch-service:3006',
     },
 ];
 
-// Thiết lập proxy cho từng service
 services.forEach(({ route, target }) => {
     const proxyOptions = {
         target,
-        changeOrigin: true, // Cần thiết để proxy hoạt động đúng
+        changeOrigin: true,
         pathRewrite: {
-            [`^${route}`]: '/',
+            // Dòng này sẽ cắt bỏ tiền tố route.
+            // Ví dụ: Client gọi /api/branches/nearest -> Service nhận /nearest
+            [`^${route}`]: '',
         },
-        
     };
     app.use(route, createProxyMiddleware(proxyOptions));
 });

@@ -12,7 +12,11 @@ const ProductListAdminPage = () => {
     const fetchProducts = async () => {
         try {
             setLoading(true);
-            const { data } = await axios.get('http://localhost:3000/api/products');
+            // 1. Khai báo URL từ biến môi trường (nếu chưa có)
+            const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000';
+
+            // 2. Gọi API sử dụng biến đó
+            const { data } = await axios.get(`${API_URL}/api/products`);
             setProducts(data);
             setLoading(false);
         } catch (err) {

@@ -1,0 +1,7 @@
+﻿# Không sao chép thư mục node_modules từ máy của bạn
+node_modules
+
+# Không sao chép file .env (chúng ta sẽ cung cấp qua docker-compose)
+.env*
+
+npm-debug.log

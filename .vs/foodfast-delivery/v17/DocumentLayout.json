@@ -3,172 +3,92 @@
   "WorkspaceRootPath": "C:\\Users\\nhuvu\\foodfast-delivery\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\src\\controllers\\orderController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:order-service\\src\\controllers\\orderController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\src\\models\\orderModel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:order-service\\src\\models\\orderModel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:order-service\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:order-service\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:order-service\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:user-service\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\src\\middleware\\authMiddleware.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:order-service\\src\\middleware\\authMiddleware.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\src\\routes\\orderRoutes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:order-service\\src\\routes\\orderRoutes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\ShippingPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\pages\\ShippingPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\OrderPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\pages\\OrderPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\product-service\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:product-service\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\admin\\ProductEditPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\pages\\admin\\ProductEditPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\admin\\ProductListAdminPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\pages\\admin\\ProductListAdminPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\product-service\\src\\controllers\\productController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:product-service\\src\\controllers\\productController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\product-service\\src\\middleware\\authMiddleware.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:product-service\\src\\middleware\\authMiddleware.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\product-service\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:product-service\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\product-service\\src\\models\\productModel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:product-service\\src\\models\\productModel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\product-service\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:product-service\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\product-service\\src\\routes\\productRoutes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:product-service\\src\\routes\\productRoutes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\context\\AuthContext.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\context\\AuthContext.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\src\\Models\\userModel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:user-service\\src\\Models\\userModel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\src\\routes\\userRoutes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:user-service\\src\\routes\\userRoutes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:user-service\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\src\\controllers\\userController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:user-service\\src\\controllers\\userController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\tailwind.config.cjs||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\tailwind.config.cjs||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\postcss.config.cjs||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\postcss.config.cjs||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\Header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\components\\Header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\AdminRoute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\components\\AdminRoute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\OrderHistoryPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\pages\\OrderHistoryPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\CartPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\pages\\CartPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\ProductDetailPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\pages\\ProductDetailPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\RegisterPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\pages\\RegisterPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\LoginPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\pages\\LoginPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\HeroSection.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\components\\HeroSection.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\context\\CartContext.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\context\\CartContext.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\ProtectedRoute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\components\\ProtectedRoute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\BranchModal.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\components\\BranchModal.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\branch-service\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:branch-service\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\admin\\BranchListAdminPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\pages\\admin\\BranchListAdminPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\delivery-service\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:delivery-service\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\OrderTrackingPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\pages\\OrderTrackingPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\LoginPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\pages\\LoginPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\admin\\OrderListAdminPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\pages\\admin\\OrderListAdminPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\OrderPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\pages\\OrderPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\HomePage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\pages\\HomePage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\AdminRoute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\components\\AdminRoute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\api-gateway\\gateway.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:api-gateway\\gateway.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:user-service\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\Product.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\components\\Product.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\src\\middleware\\authMiddleware.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:user-service\\src\\middleware\\authMiddleware.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\src\\routes\\userRoutes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:user-service\\src\\routes\\userRoutes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\src\\controllers\\userController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:user-service\\src\\controllers\\userController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\src\\models\\orderModel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:order-service\\src\\models\\orderModel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\src\\controllers\\orderController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:order-service\\src\\controllers\\orderController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\ShippingPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\pages\\ShippingPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\CartPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foodfast-frontend\\src\\pages\\CartPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -178,553 +98,278 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 25,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "orderModel.js",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\src\\models\\orderModel.js",
-              "RelativeDocumentMoniker": "order-service\\src\\models\\orderModel.js",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\src\\models\\orderModel.js",
-              "RelativeToolTip": "order-service\\src\\models\\orderModel.js",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAwwCwAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-10T15:28:59.515Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "package.json",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\package.json",
-              "RelativeDocumentMoniker": "order-service\\package.json",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\package.json",
-              "RelativeToolTip": "order-service\\package.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-10T15:28:41.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": ".env",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\.env",
-              "RelativeDocumentMoniker": "order-service\\.env",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\.env",
-              "RelativeToolTip": "order-service\\.env",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-10T15:25:41.725Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "authMiddleware.js",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\src\\middleware\\authMiddleware.js",
-              "RelativeDocumentMoniker": "order-service\\src\\middleware\\authMiddleware.js",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\src\\middleware\\authMiddleware.js",
-              "RelativeToolTip": "order-service\\src\\middleware\\authMiddleware.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-10T15:25:05.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "OrderPage.jsx",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\OrderPage.jsx",
-              "RelativeDocumentMoniker": "foodfast-frontend\\src\\pages\\OrderPage.jsx",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\OrderPage.jsx",
-              "RelativeToolTip": "foodfast-frontend\\src\\pages\\OrderPage.jsx",
-              "ViewState": "AgIAADQAAAAAAAAAAADwv1IAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-10T12:48:44.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "orderRoutes.js",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\src\\routes\\orderRoutes.js",
-              "RelativeDocumentMoniker": "order-service\\src\\routes\\orderRoutes.js",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\src\\routes\\orderRoutes.js",
-              "RelativeToolTip": "order-service\\src\\routes\\orderRoutes.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-10T12:47:58.95Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": ".env",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\.env",
-              "RelativeDocumentMoniker": "user-service\\.env",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\.env",
-              "RelativeToolTip": "user-service\\.env",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-10T12:42:46.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": ".env",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\product-service\\.env",
-              "RelativeDocumentMoniker": "product-service\\.env",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\product-service\\.env",
-              "RelativeToolTip": "product-service\\.env",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-10T12:41:14.385Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "productController.js",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\product-service\\src\\controllers\\productController.js",
-              "RelativeDocumentMoniker": "product-service\\src\\controllers\\productController.js",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\product-service\\src\\controllers\\productController.js",
-              "RelativeToolTip": "product-service\\src\\controllers\\productController.js",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAqwE8AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-10T12:03:33.666Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "authMiddleware.js",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\product-service\\src\\middleware\\authMiddleware.js",
-              "RelativeDocumentMoniker": "product-service\\src\\middleware\\authMiddleware.js",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\product-service\\src\\middleware\\authMiddleware.js",
-              "RelativeToolTip": "product-service\\src\\middleware\\authMiddleware.js",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAqwCUAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-10T12:02:01.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "package.json",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\product-service\\package.json",
-              "RelativeDocumentMoniker": "product-service\\package.json",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\product-service\\package.json",
-              "RelativeToolTip": "product-service\\package.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-10T12:00:31.066Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "productModel.js",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\product-service\\src\\models\\productModel.js",
-              "RelativeDocumentMoniker": "product-service\\src\\models\\productModel.js",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\product-service\\src\\models\\productModel.js",
-              "RelativeToolTip": "product-service\\src\\models\\productModel.js",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwCMAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-10T12:00:12.249Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "server.js",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\product-service\\server.js",
-              "RelativeDocumentMoniker": "product-service\\server.js",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\product-service\\server.js",
-              "RelativeToolTip": "product-service\\server.js",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABsAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-10T11:59:57.207Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "productRoutes.js",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\product-service\\src\\routes\\productRoutes.js",
-              "RelativeDocumentMoniker": "product-service\\src\\routes\\productRoutes.js",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\product-service\\src\\routes\\productRoutes.js",
-              "RelativeToolTip": "product-service\\src\\routes\\productRoutes.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-10T11:58:01.983Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ProductEditPage.jsx",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\admin\\ProductEditPage.jsx",
-              "RelativeDocumentMoniker": "foodfast-frontend\\src\\pages\\admin\\ProductEditPage.jsx",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\admin\\ProductEditPage.jsx",
-              "RelativeToolTip": "foodfast-frontend\\src\\pages\\admin\\ProductEditPage.jsx",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAD0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-10T11:49:03.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "userModel.js",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\src\\Models\\userModel.js",
-              "RelativeDocumentMoniker": "user-service\\src\\Models\\userModel.js",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\src\\Models\\userModel.js",
-              "RelativeToolTip": "user-service\\src\\Models\\userModel.js",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAC0AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-10T11:47:15.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "userRoutes.js",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\src\\routes\\userRoutes.js",
-              "RelativeDocumentMoniker": "user-service\\src\\routes\\userRoutes.js",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\src\\routes\\userRoutes.js",
-              "RelativeToolTip": "user-service\\src\\routes\\userRoutes.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-10T11:47:03.537Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "package.json",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\package.json",
-              "RelativeDocumentMoniker": "package.json",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\package.json",
-              "RelativeToolTip": "package.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-10T11:42:40.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "userController.js",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\src\\controllers\\userController.js",
-              "RelativeDocumentMoniker": "user-service\\src\\controllers\\userController.js",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\src\\controllers\\userController.js",
-              "RelativeToolTip": "user-service\\src\\controllers\\userController.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-10T11:41:00.627Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ProductListAdminPage.jsx",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\admin\\ProductListAdminPage.jsx",
-              "RelativeDocumentMoniker": "foodfast-frontend\\src\\pages\\admin\\ProductListAdminPage.jsx",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\admin\\ProductListAdminPage.jsx",
-              "RelativeToolTip": "foodfast-frontend\\src\\pages\\admin\\ProductListAdminPage.jsx",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAuwGMAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-10T11:18:58.464Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "AdminRoute.jsx",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\AdminRoute.jsx",
-              "RelativeDocumentMoniker": "foodfast-frontend\\src\\components\\AdminRoute.jsx",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\AdminRoute.jsx",
-              "RelativeToolTip": "foodfast-frontend\\src\\components\\AdminRoute.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-10T11:18:16.269Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "index.css",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\index.css",
-              "RelativeDocumentMoniker": "foodfast-frontend\\src\\index.css",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\index.css",
-              "RelativeToolTip": "foodfast-frontend\\src\\index.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-10-10T10:17:03.926Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "postcss.config.cjs",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\postcss.config.cjs",
-              "RelativeDocumentMoniker": "foodfast-frontend\\postcss.config.cjs",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\postcss.config.cjs",
-              "RelativeToolTip": "foodfast-frontend\\postcss.config.cjs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-10T10:15:59.747Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "tailwind.config.cjs",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\tailwind.config.cjs",
-              "RelativeDocumentMoniker": "foodfast-frontend\\tailwind.config.cjs",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\tailwind.config.cjs",
-              "RelativeToolTip": "foodfast-frontend\\tailwind.config.cjs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-10T10:15:37.112Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "OrderHistoryPage.jsx",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\OrderHistoryPage.jsx",
-              "RelativeDocumentMoniker": "foodfast-frontend\\src\\pages\\OrderHistoryPage.jsx",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\OrderHistoryPage.jsx",
-              "RelativeToolTip": "foodfast-frontend\\src\\pages\\OrderHistoryPage.jsx",
-              "ViewState": "AgIAACIAAAAAAAAAAAAowEoAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-10T09:59:52.957Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "orderController.js",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\src\\controllers\\orderController.js",
-              "RelativeDocumentMoniker": "order-service\\src\\controllers\\orderController.js",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\src\\controllers\\orderController.js",
-              "RelativeToolTip": "order-service\\src\\controllers\\orderController.js",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAAAFwAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-10T09:52:56.559Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "server.js",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\server.js",
-              "RelativeDocumentMoniker": "order-service\\server.js",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\server.js",
-              "RelativeToolTip": "order-service\\server.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-10T09:47:56.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "ProtectedRoute.jsx",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\ProtectedRoute.jsx",
-              "RelativeDocumentMoniker": "foodfast-frontend\\src\\components\\ProtectedRoute.jsx",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\ProtectedRoute.jsx",
-              "RelativeToolTip": "foodfast-frontend\\src\\components\\ProtectedRoute.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-10T09:41:54.59Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ShippingPage.jsx",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\ShippingPage.jsx",
-              "RelativeDocumentMoniker": "foodfast-frontend\\src\\pages\\ShippingPage.jsx",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\ShippingPage.jsx",
-              "RelativeToolTip": "foodfast-frontend\\src\\pages\\ShippingPage.jsx",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACYAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-10T09:31:04.98Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "CartPage.jsx",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\CartPage.jsx",
-              "RelativeDocumentMoniker": "foodfast-frontend\\src\\pages\\CartPage.jsx",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\CartPage.jsx",
-              "RelativeToolTip": "foodfast-frontend\\src\\pages\\CartPage.jsx",
-              "ViewState": "AgIAABYAAAAAAAAAAAAowD4AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-10T09:21:30.968Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
               "Title": "CartContext.jsx",
               "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\context\\CartContext.jsx",
               "RelativeDocumentMoniker": "foodfast-frontend\\src\\context\\CartContext.jsx",
               "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\context\\CartContext.jsx",
               "RelativeToolTip": "foodfast-frontend\\src\\context\\CartContext.jsx",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAowC0AAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-10T09:15:27.138Z",
+              "WhenOpened": "2025-12-02T20:28:33.67Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "gateway.js",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\api-gateway\\gateway.js",
-              "RelativeDocumentMoniker": "api-gateway\\gateway.js",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\api-gateway\\gateway.js",
-              "RelativeToolTip": "api-gateway\\gateway.js",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-10T09:12:09.562Z",
+              "DocumentIndex": 3,
+              "Title": "BranchModal.jsx",
+              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\BranchModal.jsx",
+              "RelativeDocumentMoniker": "foodfast-frontend\\src\\components\\BranchModal.jsx",
+              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\BranchModal.jsx",
+              "RelativeToolTip": "foodfast-frontend\\src\\components\\BranchModal.jsx",
+              "ViewState": "AgIAABsAAAAAAAAAAAAcwCkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-12-02T18:24:42.18Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 4,
               "Title": "server.js",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\server.js",
-              "RelativeDocumentMoniker": "user-service\\server.js",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\server.js",
-              "RelativeToolTip": "user-service\\server.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAADAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\branch-service\\server.js",
+              "RelativeDocumentMoniker": "branch-service\\server.js",
+              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\branch-service\\server.js",
+              "RelativeToolTip": "branch-service\\server.js",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAIwFkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-10T09:11:04.68Z",
+              "WhenOpened": "2025-12-02T17:46:57.757Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AuthContext.jsx",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\context\\AuthContext.jsx",
-              "RelativeDocumentMoniker": "foodfast-frontend\\src\\context\\AuthContext.jsx",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\context\\AuthContext.jsx",
-              "RelativeToolTip": "foodfast-frontend\\src\\context\\AuthContext.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "BranchListAdminPage.jsx",
+              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\admin\\BranchListAdminPage.jsx",
+              "RelativeDocumentMoniker": "foodfast-frontend\\src\\pages\\admin\\BranchListAdminPage.jsx",
+              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\admin\\BranchListAdminPage.jsx",
+              "RelativeToolTip": "foodfast-frontend\\src\\pages\\admin\\BranchListAdminPage.jsx",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAMwIgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-10T09:01:13.321Z",
+              "WhenOpened": "2025-12-02T17:38:40.176Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Header.jsx",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\Header.jsx",
-              "RelativeDocumentMoniker": "foodfast-frontend\\src\\components\\Header.jsx",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\Header.jsx",
-              "RelativeToolTip": "foodfast-frontend\\src\\components\\Header.jsx",
-              "ViewState": "AgIAABsAAAAAAAAAAAAkwDcAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-10T09:00:11.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "LoginPage.jsx",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\LoginPage.jsx",
-              "RelativeDocumentMoniker": "foodfast-frontend\\src\\pages\\LoginPage.jsx",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\LoginPage.jsx",
-              "RelativeToolTip": "foodfast-frontend\\src\\pages\\LoginPage.jsx",
-              "ViewState": "AgIAADQAAAAAAAAAAAAowFwAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-10T08:59:52.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "RegisterPage.jsx",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\RegisterPage.jsx",
-              "RelativeDocumentMoniker": "foodfast-frontend\\src\\pages\\RegisterPage.jsx",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\RegisterPage.jsx",
-              "RelativeToolTip": "foodfast-frontend\\src\\pages\\RegisterPage.jsx",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAkwGoAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-10T08:59:37.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ProductDetailPage.jsx",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\ProductDetailPage.jsx",
-              "RelativeDocumentMoniker": "foodfast-frontend\\src\\pages\\ProductDetailPage.jsx",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\ProductDetailPage.jsx",
-              "RelativeToolTip": "foodfast-frontend\\src\\pages\\ProductDetailPage.jsx",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowEMAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-10T08:57:57.157Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "main.jsx",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\main.jsx",
-              "RelativeDocumentMoniker": "foodfast-frontend\\src\\main.jsx",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\main.jsx",
-              "RelativeToolTip": "foodfast-frontend\\src\\main.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-10T08:56:01.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "App.jsx",
               "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\App.jsx",
               "RelativeDocumentMoniker": "foodfast-frontend\\src\\App.jsx",
               "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\App.jsx",
               "RelativeToolTip": "foodfast-frontend\\src\\App.jsx",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAAAFYAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-10T08:55:45.917Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T20:16:08.909Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 10,
+              "Title": "OrderListAdminPage.jsx",
+              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\admin\\OrderListAdminPage.jsx",
+              "RelativeDocumentMoniker": "foodfast-frontend\\src\\pages\\admin\\OrderListAdminPage.jsx",
+              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\admin\\OrderListAdminPage.jsx",
+              "RelativeToolTip": "foodfast-frontend\\src\\pages\\admin\\OrderListAdminPage.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-11-25T20:10:44.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "HomePage.jsx",
               "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\HomePage.jsx",
               "RelativeDocumentMoniker": "foodfast-frontend\\src\\pages\\HomePage.jsx",
               "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\HomePage.jsx",
               "RelativeToolTip": "foodfast-frontend\\src\\pages\\HomePage.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-10T08:55:25.437Z",
+              "WhenOpened": "2025-11-25T17:16:55.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HeroSection.jsx",
+              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\HeroSection.jsx",
+              "RelativeDocumentMoniker": "foodfast-frontend\\src\\components\\HeroSection.jsx",
+              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\HeroSection.jsx",
+              "RelativeToolTip": "foodfast-frontend\\src\\components\\HeroSection.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-11-25T17:16:18.226Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Product.jsx",
-              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\Product.jsx",
-              "RelativeDocumentMoniker": "foodfast-frontend\\src\\components\\Product.jsx",
-              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\Product.jsx",
-              "RelativeToolTip": "foodfast-frontend\\src\\components\\Product.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Header.jsx",
+              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\Header.jsx",
+              "RelativeDocumentMoniker": "foodfast-frontend\\src\\components\\Header.jsx",
+              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\Header.jsx",
+              "RelativeToolTip": "foodfast-frontend\\src\\components\\Header.jsx",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAACsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-10-10T08:55:02.602Z",
+              "WhenOpened": "2025-11-25T17:15:56.433Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AdminRoute.jsx",
+              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\AdminRoute.jsx",
+              "RelativeDocumentMoniker": "foodfast-frontend\\src\\components\\AdminRoute.jsx",
+              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\components\\AdminRoute.jsx",
+              "RelativeToolTip": "foodfast-frontend\\src\\components\\AdminRoute.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-11-25T17:15:42.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "server.js",
+              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\server.js",
+              "RelativeDocumentMoniker": "user-service\\server.js",
+              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\server.js",
+              "RelativeToolTip": "user-service\\server.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-25T17:14:30.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "userRoutes.js",
+              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\src\\routes\\userRoutes.js",
+              "RelativeDocumentMoniker": "user-service\\src\\routes\\userRoutes.js",
+              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\src\\routes\\userRoutes.js",
+              "RelativeToolTip": "user-service\\src\\routes\\userRoutes.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-25T17:14:13.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "userController.js",
+              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\src\\controllers\\userController.js",
+              "RelativeDocumentMoniker": "user-service\\src\\controllers\\userController.js",
+              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\src\\controllers\\userController.js",
+              "RelativeToolTip": "user-service\\src\\controllers\\userController.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-25T17:13:49.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "authMiddleware.js",
+              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\src\\middleware\\authMiddleware.js",
+              "RelativeDocumentMoniker": "user-service\\src\\middleware\\authMiddleware.js",
+              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\user-service\\src\\middleware\\authMiddleware.js",
+              "RelativeToolTip": "user-service\\src\\middleware\\authMiddleware.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-25T17:13:40.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginPage.jsx",
+              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\LoginPage.jsx",
+              "RelativeDocumentMoniker": "foodfast-frontend\\src\\pages\\LoginPage.jsx",
+              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\LoginPage.jsx",
+              "RelativeToolTip": "foodfast-frontend\\src\\pages\\LoginPage.jsx",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-11-25T17:13:08.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "server.js",
+              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\delivery-service\\server.js",
+              "RelativeDocumentMoniker": "delivery-service\\server.js",
+              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\delivery-service\\server.js",
+              "RelativeToolTip": "delivery-service\\server.js",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAKMAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-25T17:04:26.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderTrackingPage.jsx",
+              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\OrderTrackingPage.jsx",
+              "RelativeDocumentMoniker": "foodfast-frontend\\src\\pages\\OrderTrackingPage.jsx",
+              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\OrderTrackingPage.jsx",
+              "RelativeToolTip": "foodfast-frontend\\src\\pages\\OrderTrackingPage.jsx",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAAAKQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-11-25T16:54:42.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "orderController.js",
+              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\src\\controllers\\orderController.js",
+              "RelativeDocumentMoniker": "order-service\\src\\controllers\\orderController.js",
+              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\src\\controllers\\orderController.js",
+              "RelativeToolTip": "order-service\\src\\controllers\\orderController.js",
+              "ViewState": "AgIAANEAAAAAAAAAAAAwwO0AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-25T16:29:51.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "orderModel.js",
+              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\src\\models\\orderModel.js",
+              "RelativeDocumentMoniker": "order-service\\src\\models\\orderModel.js",
+              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\order-service\\src\\models\\orderModel.js",
+              "RelativeToolTip": "order-service\\src\\models\\orderModel.js",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAEQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-25T16:17:27.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CartPage.jsx",
+              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\CartPage.jsx",
+              "RelativeDocumentMoniker": "foodfast-frontend\\src\\pages\\CartPage.jsx",
+              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\CartPage.jsx",
+              "RelativeToolTip": "foodfast-frontend\\src\\pages\\CartPage.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-11-25T16:16:41.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderPage.jsx",
+              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\OrderPage.jsx",
+              "RelativeDocumentMoniker": "foodfast-frontend\\src\\pages\\OrderPage.jsx",
+              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\OrderPage.jsx",
+              "RelativeToolTip": "foodfast-frontend\\src\\pages\\OrderPage.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ4AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-11-25T15:58:54.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ShippingPage.jsx",
+              "DocumentMoniker": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\ShippingPage.jsx",
+              "RelativeDocumentMoniker": "foodfast-frontend\\src\\pages\\ShippingPage.jsx",
+              "ToolTip": "C:\\Users\\nhuvu\\foodfast-delivery\\foodfast-frontend\\src\\pages\\ShippingPage.jsx",
+              "RelativeToolTip": "foodfast-frontend\\src\\pages\\ShippingPage.jsx",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAAAKAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-11-25T15:57:09.068Z"
             }
           ]
         }

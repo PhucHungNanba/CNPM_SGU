@@ -1,17 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\branch-service",
     "\\foodfast-frontend",
     "\\foodfast-frontend\\src",
-    "\\foodfast-frontend\\src\\pages",
-    "\\order-service",
-    "\\order-service\\src",
-    "\\order-service\\src\\controllers",
-    "\\order-service\\src\\middleware",
-    "\\order-service\\src\\models",
-    "\\order-service\\src\\routes",
-    "\\user-service"
+    "\\foodfast-frontend\\src\\components",
+    "\\foodfast-frontend\\src\\context",
+    "\\user-service",
+    "\\user-service\\src",
+    "\\user-service\\src\\middleware",
+    "\\user-service\\src\\routes"
   ],
-  "SelectedNode": "\\order-service\\src\\controllers\\orderController.js",
+  "SelectedNode": "\\foodfast-frontend\\src\\components\\Header.jsx",
   "PreviewInSolutionExplorer": false
 }

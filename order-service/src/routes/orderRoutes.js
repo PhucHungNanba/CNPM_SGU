@@ -1,24 +1,31 @@
 ﻿import express from 'express';
 import {
     createOrder,
-    getMyOrders,
+    getOrderById,
     updateOrderToPaid,
-    getOrderById
+    updateOrderStatus,
+    getMyOrders,
+    getAllOrders,
+    assignDrone
 } from '../controllers/orderController.js';
-import { protect } from '../middleware/authMiddleware.js';
 
 const router = express.Router();
 
-// Route để tạo đơn hàng mới
-router.route('/').post(protect, createOrder);
+// Định nghĩa các route con (Gateway gửi gì thì vào đây)
 
-// Route để lấy tất cả đơn hàng của một user
-router.route('/myorders/:userId').get(protect, getMyOrders);
+// Route gốc: / (Tương ứng với /api/orders từ Gateway)
+router.route('/').post(createOrder);
 
-// Route để lấy một đơn hàng cụ thể theo ID <-- DÒNG QUAN TRỌNG
-router.route('/:id').get(protect, getOrderById);
+// Route lấy tất cả đơn (cho Admin): /all
+router.route('/all').get(getAllOrders);
 
-// Route để cập nhật trạng thái thanh toán
-router.route('/:id/pay').put(updateOrderToPaid); // Middleware `protect` có thể thêm ở đây nếu cần
+// Route lấy đơn của tôi: /myorders/:userId
+router.route('/myorders/:userId').get(getMyOrders);
+
+// Các route thao tác trên ID đơn hàng cụ thể
+router.route('/:id').get(getOrderById);
+router.route('/:id/pay').put(updateOrderToPaid);
+router.route('/:id/status').put(updateOrderStatus);
+router.route('/:id/assign-drone').put(assignDrone);
 
 export default router;

@@ -15,7 +15,7 @@ const ProductDetailPage = () => {
         const fetchProduct = async () => {
             setLoading(true);
             try {
-                const response = await axios.get(`http://localhost:3000/api/products/${id}`);
+                const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/products/${id}`);
                 setProduct(response.data);
             } catch (err) {
                 setError('Không thể tải dữ liệu sản phẩm.');

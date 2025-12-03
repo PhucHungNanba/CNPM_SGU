@@ -1,8 +1,7 @@
-﻿// src/pages/OrderHistoryPage.jsx
-import React, { useState, useEffect, useContext } from 'react';
+﻿import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 import { AuthContext } from '../context/AuthContext';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Make sure Link is imported
 
 const OrderHistoryPage = () => {
     const [orders, setOrders] = useState([]);
@@ -12,12 +11,15 @@ const OrderHistoryPage = () => {
 
     useEffect(() => {
         const fetchOrders = async () => {
-            if (!userInfo) { setLoading(false); return; }
+            if (!userInfo || !userInfo.token) {
+                setError('Bạn cần đăng nhập để xem lịch sử.');
+                setLoading(false);
+                return;
+            }
             try {
-                const { data } = await axios.get(
-                    `http://localhost:3000/api/orders/myorders/${userInfo._id}`
-                );
-                setOrders(data);
+                setLoading(true);
+                const config = { headers: { Authorization: `Bearer ${userInfo.token}` } };
+                const { data } = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/orders/myorders/${userInfo._id}`, config);                setOrders(data);
             } catch (err) {
                 setError('Không thể tải lịch sử đơn hàng.');
             } finally {
@@ -50,6 +52,10 @@ const OrderHistoryPage = () => {
                                 <th scope="col" className="px-6 py-3">TỔNG TIỀN</th>
                                 <th scope="col" className="px-6 py-3">TRẠNG THÁI</th>
                                 <th scope="col" className="px-6 py-3">ĐÃ THANH TOÁN</th>
+                                {/* Add new header for details */}
+                                <th scope="col" className="px-6 py-3">
+                                    <span className="sr-only">Chi tiết</span>
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
@@ -62,6 +68,15 @@ const OrderHistoryPage = () => {
                                     <td className="px-6 py-4">{order.totalPrice.toLocaleString('vi-VN')} VNĐ</td>
                                     <td className="px-6 py-4">{order.status}</td>
                                     <td className="px-6 py-4">{order.isPaid ? 'Rồi' : 'Chưa'}</td>
+                                    {/* Add new cell with Link */}
+                                    <td className="px-6 py-4 text-right">
+                                        <Link
+                                            to={`/order/${order._id}`}
+                                            className="font-medium text-indigo-600 hover:text-indigo-800 hover:underline"
+                                        >
+                                            Chi tiết
+                                        </Link>
+                                    </td>
                                 </tr>
                             ))}
                         </tbody>
