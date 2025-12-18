@@ -1,228 +1,136 @@
-# 🍚 FoodFast Delivery - Hệ thống Giao Các Món Việt bằng Drone
+#  FoodFast Delivery - Hệ thống Giao Món Ăn Bằng Drone
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://img.shields.io/badge/Build-Passing-success)](https://github.com/PhucHungNhanba/CNPM_SGU.git)
-[![Kubernetes](https://img.shields.io/badge/Deployment-Kubernetes-326ce5)](https://kubernetes.io/)
-[![Spring Boot](https://img.shields.io/badge/Backend-Spring%20Boot-green)](https://spring.io/projects/spring-boot)
- 
-Hệ thống backend cho ứng dụng giao đồ ăn **"FoodFast Delivery"** (tiền thân là DRONE - FAST FOOD DELIVERY), chuyên phục vụ các món ăn đặc trưng Việt Nam (Cơm Tấm, Phở, Bún chả...).
+[![Build Status](https://img.shields.io/badge/Build-Passing-success)](https://github.com/PhucHungNhanba/CNPM_SGU)
+[![Backend](https://img.shields.io/badge/Backend-Spring%20Boot-green)](https://spring.io/projects/spring-boot)
+[![Frontend](https://img.shields.io/badge/Frontend-ReactJS%20%7C%20React%20Native-blue)](https://reactjs.org/)
+[![Database](https://img.shields.io/badge/Database-MongoDB-47A248)](https://www.mongodb.com/)
+[![Architecture](https://img.shields.io/badge/Architecture-Microservices%20(REST)-orange)](https://restfulapi.net/)
 
-Dự án được xây dựng theo kiến trúc **Microservices hướng sự kiện (Event-Driven)**, ứng dụng công nghệ Drone để giao hàng. Mục tiêu là giải quyết các vấn đề về trải nghiệm người dùng không đồng nhất, quy trình đặt hàng phức tạp và thiếu công cụ theo dõi đơn hàng minh bạch trong các hệ thống hiện tại.
-
----
-
-## 🎯 Mục tiêu dự án (Project Goals)
-
-* ✅ **Trải nghiệm nhất quán:** Cung cấp trải nghiệm đặt hàng nhanh chóng, tiện lợi và đồng bộ trên cả nền tảng Web (React.js) và Mobile (React Native).
-* ✅ **Hệ thống tích hợp:** Tích hợp liền mạch các chức năng từ duyệt menu, giỏ hàng, thanh toán (VNPay) đến theo dõi đơn hàng trong một hệ thống duy nhất.
-* ✅ **Khả năng mở rộng:** Xây dựng hệ thống linh hoạt, dễ dàng mở rộng để tích hợp thêm các đối tác nhà hàng và dịch vụ vận chuyển mới.
-* ✅ **Độ ổn định và Giám sát:** Đảm bảo hệ thống hoạt động ổn định, có khả năng phục hồi cao và được giám sát theo thời gian thực.
+> **Đồ án môn Công nghệ Phần mềm - Nhóm 14**
+>
+> Hệ thống đặt và giao món ăn trực tuyến (Cơm Tấm, Phở...) tích hợp công nghệ giao hàng bằng **Drone**, với kiến trúc Microservices linh hoạt và trải nghiệm người dùng đồng nhất.
 
 ---
 
-## 🏗️ Kiến trúc hệ thống (System Architecture)
+##  Giới thiệu Dự án
+**FoodFast Delivery** cung cấp giải pháp đặt món ăn nhanh chóng, giải quyết các vấn đề về quy trình giao vận phức tạp. Hệ thống tập trung vào tính ổn định và khả năng tích hợp chặt chẽ giữa các dịch vụ thông qua giao thức chuẩn RESTful API.
 
-Hệ thống được thiết kế theo kiến trúc **Microservices hướng sự kiện**, sử dụng **Message Broker (Kafka)** để giao tiếp bất đồng bộ giữa các dịch vụ.
+###  Mục tiêu chính
+* **Trải nghiệm nhất quán:** Đồng bộ dữ liệu hoàn hảo giữa Web App (ReactJS) và Mobile App (React Native).
+* **Vận hành tự động:** Quy trình kiểm tra tồn kho, gán chi nhánh và tạo đơn vận chuyển được xử lý tự động qua API.
+* **Quản lý tập trung:** Sử dụng Shared Database để đảm bảo tính nhất quán dữ liệu cao nhất cho các nghiệp vụ cốt lõi.
 
-* **Client (Web/Mobile):** Giao diện người dùng được xây dựng bằng React.js và React Native.
-* **API Gateway:** Là điểm vào duy nhất cho tất cả các yêu cầu từ Client, điều hướng đến các microservice phù hợp.
-* **Core Microservices:** Gồm 5 dịch vụ chính (User, Product, Order, Payment, Delivery), mỗi dịch vụ có logic nghiệp vụ và cơ sở dữ liệu riêng.
-* **Messaging & Real-time:** Kafka xử lý các sự kiện. **Notification Service** lắng nghe các sự kiện này để gửi thông báo real-time tới người dùng qua WebSocket/SignalR.
+---
+
+##  Kiến trúc Hệ thống
+
+Hệ thống được xây dựng theo kiến trúc **Microservices RESTful**, trong đó các dịch vụ giao tiếp trực tiếp với nhau thông qua HTTP Request (Đồng bộ). Mọi yêu cầu từ phía người dùng đều được kiểm soát và điều hướng qua **API Gateway**.
+
+### Sơ đồ Component
+*(Mô phỏng lại dựa trên thiết kế thực tế của nhóm)*
 
 ```mermaid
 graph TD
-    subgraph Frontend
-        A["📱 Client <br> React.js / React Native"]
+    subgraph Client_Layer
+        Client[" Client App (Web & Mobile)"]
     end
 
-    subgraph Backend Infrastructure
-        B("🌐 API Gateway")
-        F["📨 Message Broker <br> (Kafka)"]
-        G["🔔 Notification Service"]
+    subgraph Access_Control
+        Gateway(" API Gateway<br>(Authentication & Routing)")
     end
 
-    subgraph Core Microservices
-        C["👤 User Service"]
-        D["🍱 Product Service <br> (Quản lý Cơm Tấm, Phở...)"]
-        E["📝 Order Service"]
-        H["💳 Payment Service"]
-        I["🚁 Delivery Service <br> (Logic Drone & Shipper)"]
+    subgraph Core_Services [Backend Microservices System]
+        User[" User Service<br>(Auth & Profile)"]
+        Product[" Product Service<br>(Menu & Stock)"]
+        Order[" Order Service<br>(Core Logic)"]
+        Branch[" Branch Service<br>(Store Management)"]
+        Payment[" Payment Service<br>(VNPay Integration)"]
+        Delivery[" Delivery Service<br>(Drone Dispatch)"]
     end
 
-    A -- REST API --> B
-    B --> C & D & E & H & I
+    subgraph Data_Layer
+        DB[(" Shared MongoDB Cluster")]
+    end
 
-    E -- "Publish: OrderCreated" --> F
-    H -- "Publish: PaymentProcessed" --> F
-    I -- "Publish: DeliveryUpdated" --> F
+    %% Client requests
+    Client -->|HTTPS / REST| Gateway
+    
+    %% Gateway Routing
+    Gateway -->|Forward| User
+    Gateway -->|Forward| Product
+    Gateway -->|Forward| Order
+    Gateway -->|Forward| Payment
+    Gateway -->|Forward| Delivery
+    Gateway -->|Forward| Branch
 
-    F -- "Consume Event" --> E
-    F -- "Consume Event" --> I
-    F -- "Consume Event" --> G
-    F -- "Consume Event" --> D
+    %% Inter-service Communication (Synchronous REST)
+    Order -->|REST: Check Stock| Product
+    Order -->|REST: Assign Branch| Branch
+    Delivery -->|REST: Update Status| Order
+    
+    %% Database Interaction
+    User & Product & Order & Branch & Payment & Delivery -->|Read/Write| DB
+    Các Microservices Chính
+Hệ thống bao gồm 6 dịch vụ nghiệp vụ cốt lõi:
 
-    G -- WebSocket/SignalR --> A
-````
+User Service: Quản lý đăng ký, đăng nhập (cấp phát JWT) và hồ sơ cá nhân.
 
------
+Product Service: Quản lý danh mục món ăn (CRUD) và cung cấp API kiểm tra tồn kho cho Order Service.
 
-## 💻 Công nghệ sử dụng (Tech Stack)
+Order Service (Trung tâm):
 
-| Hạng mục | Công nghệ | Biểu tượng | Ghi chú |
-| :--- | :--- | :--- | :--- |
-| **Backend** | Spring Boot (Java) | 🍃 | Framework chính cho Microservices. |
-| **Frontend** | React.js (Web), React Native (Mobile) | ⚛️ | Đảm bảo trải nghiệm đa nền tảng. |
-| **Database** | PostgreSQL | 🐘 | Cơ sở dữ liệu quan hệ. |
-| **Kiến trúc** | Microservices, Event-Driven | 🧩 | Chia nhỏ hệ thống thành 5 service chính. |
-| **Message Broker** | Apache Kafka | 📨 | Xử lý giao tiếp bất đồng bộ. |
-| **CI/CD & Deployment**| Docker, Kubernetes (K8s) | 🐳 ☸️ | Tự động hóa triển khai và mở rộng. |
-| **Monitoring** | Prometheus, Grafana | 📈 📊 | Giám sát hiệu năng real-time. |
-| **Authentication** | JWT (JSON Web Token) | 🔑 | Xác thực bảo mật cho API. |
-| **Payment Gateway** | VNPay | 💳 | Tích hợp thanh toán trực tuyến. |
+Tiếp nhận yêu cầu đặt hàng.
 
------
+Gọi API sang Product Service để giữ hàng.
 
-## 🔄 Luồng nghiệp vụ chính (Key Business Flows)
+Gọi API sang Branch Service để tìm cửa hàng phù hợp.
 
-Hệ thống xử lý các nghiệp vụ phức tạp bằng cơ chế sự kiện bất đồng bộ:
+Cập nhật trạng thái đơn hàng từ các dịch vụ khác.
 
-### 1\. Luồng Kiểm tra Tồn kho (Inventory Check)
+Branch Service: Quản lý danh sách chi nhánh và khu vực phục vụ.
 
-  * **Mục tiêu:** Đảm bảo tính toàn vẹn dữ liệu tồn kho.
-  * **Luồng:**
-    1.  User nhấn "Đặt hàng".
-    2.  `Order Service` gọi `Product Service` để kiểm tra tồn kho.
-    3.  Nếu **Còn hàng**: `Product Service` cập nhật số lượng (giữ hàng) -\> `Order Service` tạo đơn `Pending` -\> Chuyển sang thanh toán.
-    4.  Nếu **Hết hàng**: Báo lỗi ngay lập tức cho người dùng.
+Payment Service: Xử lý giao dịch với VNPay và ghi nhận lịch sử thanh toán.
 
-### 2\. Luồng Phục hồi Tồn kho (Compensation / Rollback)
+Delivery Service: Quản lý quy trình giao vận, trạng thái Drone và cập nhật tiến độ giao hàng về Order Service.
 
-  * **Mục tiêu:** Đảm bảo tính nhất quán cuối cùng (Eventual Consistency) khi giao dịch thất bại.
-  * **Luồng:**
-    1.  User thanh toán VNPay **thất bại** (do hủy, hết tiền...).
-    2.  `Payment Service` xử lý callback và publish sự kiện `PaymentProcessed` (Failed) lên Kafka.
-    3.  `Product Service` lắng nghe sự kiện này -\> Tự động **hoàn trả lại số lượng tồn kho** (Release Stock).
-    4.  `Order Service` lắng nghe sự kiện -\> Cập nhật trạng thái đơn hàng thành `Cancelled`.
+🔄 Luồng Nghiệp vụ (Key Flows)
+1. Quy trình Đặt hàng (Synchronous Flow)
+Quy trình được thực hiện tuần tự để đảm bảo tính chính xác:
 
-### 3\. Luồng Theo dõi Drone (Real-time Tracking)
+Client gửi đơn hàng -> API Gateway -> Order Service.
 
-  * **Mục tiêu:** Cung cấp dữ liệu vị trí Drone thời gian thực mà không cần dùng GPS trực tiếp từ Drone (giả lập qua Event).
-  * **Luồng:**
-    1.  Delivery Service cập nhật trạng thái/vị trí (VD: Đang giao, Đã đến).
-    2.  `Delivery Service` publish sự kiện `DeliveryUpdated` lên Kafka.
-    3.  `Notification Service` lắng nghe sự kiện này.
-    4.  `Notification Service` đẩy dữ liệu xuống Client App qua **WebSocket/SignalR**.
-    5.  Giao diện người dùng tự động cập nhật vị trí Drone 🚁 trên bản đồ.
+Order Service gọi API checkStock sang Product Service.
 
------
+Nếu còn hàng: Khóa tồn kho tạm thời.
 
-## ⚙️ Tính năng chính (Theo từng Service)
+Nếu hết hàng: Trả về lỗi ngay lập tức.
 
-#### 👤 User Service
+Order Service gọi API sang Branch Service để gán đơn cho chi nhánh gần nhất.
 
-  * Tạo tài khoản và đăng nhập bằng email/mật khẩu.
-  * Quản lý thông tin hồ sơ và địa chỉ giao hàng.
-  * Tạo và xác thực token **JWT** cho các phiên làm việc an toàn.
+Sau khi tạo đơn thành công, Client được chuyển hướng sang Payment Service để thanh toán.
 
-#### 🍱 Product Service (Quản lý Thực đơn)
+2. Quy trình Cập nhật Giao vận
+Delivery Service chịu trách nhiệm điều phối Drone.
 
-  * Cung cấp API lấy danh sách món ăn (Cơm Tấm, Phở...).
-  * Admin quản lý sản phẩm (CRUD: thêm, sửa, xóa, cập nhật ảnh).
-  * Quản lý số lượng tồn kho và cập nhật khi có đơn hàng.
+Khi trạng thái giao hàng thay đổi (VD: Delivered), Delivery Service sẽ gọi ngược lại API updateStatus của Order Service để đồng bộ trạng thái cuối cùng cho người dùng.
 
-#### 📝 Order Service (Quản lý Đơn hàng)
+🚧 Roadmap & Future Features
+[x] Triển khai kiến trúc Microservices cơ bản (REST).
 
-  * Xử lý logic giỏ hàng (thêm, xóa, cập nhật).
-  * Tạo đơn hàng mới với trạng thái "Pending".
-  * Xem lịch sử và trạng thái đơn hàng.
-  * Cập nhật trạng thái dựa trên sự kiện từ Payment và Delivery Service.
+[x] Tích hợp Shared Database MongoDB.
 
-#### 💳 Payment Service
+[ ] Phase 2: Phát triển Notification Service (Thông báo đẩy).
 
-  * Tích hợp cổng thanh toán **VNPay**.
-  * Xử lý callback/webhook để xác nhận giao dịch thành công/thất bại.
-  * Publish sự kiện `PaymentProcessed` lên Kafka.
+[ ] Phase 2: Tích hợp Message Broker để xử lý các tác vụ nền.
 
-#### 🚁 Delivery Service (Điều phối Giao vận)
+Thực hiện bởi Nhóm 14 - CNPM SGU
 
-  * Tiếp nhận đơn hàng đã thanh toán thành công.
-  * Quản lý trạng thái giao hàng (`Finding Driver`, `Delivering`, `Delivered`).
-  * Cung cấp dữ liệu tracking real-time cho người dùng.
 
-#### 🔔 Notification Service
+### 💡 Những thay đổi quan trọng mình đã thực hiện:
 
-  * Lắng nghe sự kiện thay đổi trạng thái đơn hàng từ Kafka.
-  * Gửi Push Notification hoặc cập nhật qua WebSocket tới Client.
-
-#### 🛠️ Admin Portal (Trang Quản trị)
-
-  * **Dashboard:** Thống kê doanh thu, tổng đơn hàng, số Drone hoạt động.
-  * **Heatmap:** Bản đồ nhiệt hiển thị vị trí Drone thực tế.
-  * **Quản lý sự cố:** Cảnh báo lỗi thanh toán hoặc Drone gặp trục trặc.
-
------
-
-## 📊 Yêu cầu phi chức năng (Non-Functional Requirements)
-
-  * **Bảo mật:** API xác thực bằng JWT, giao tiếp qua HTTPS.
-  * **Hiệu năng:** Thời gian phản hồi API chính ≤ 500ms.
-  * **Tính sẵn sàng:** Hệ thống chịu lỗi tốt, Uptime cao, database có cơ chế backup.
-  * **Khả năng mở rộng:** Các service scale độc lập bằng Kubernetes.
-  * **Giám sát:** Theo dõi real-time qua Prometheus/Grafana, dashboard riêng cho từng service.
-  * **Triển khai:** Tự động hóa hoàn toàn qua CI/CD pipeline.
-
------
-
-## 🚀 Cài đặt và Chạy dự án
-
-### Yêu cầu
-
-  - Java Development Kit (JDK)
-  - Docker và Docker Compose
-  - Git
-  - Maven hoặc Gradle
-
-### Các bước cài đặt
-
-1.  **Clone repository:**
-
-    ```bash
-    git clone [https://github.com/PhucHungNhanba/CNPM_SGU.git](https://github.com/PhucHungNhanba/CNPM_SGU.git)
-    cd CNPM_SGU
-    ```
-
-2.  **Cấu hình biến môi trường:**
-    Trong thư mục của mỗi microservice, sao chép file `application.yml.example` thành `application.yml` và điền các thông tin cần thiết (Database URL, Kafka Broker, JWT Secret...).
-
-3.  **Chạy bằng Docker Compose (Khuyến khích):**
-    *Khởi chạy hạ tầng (Kafka, Zookeeper, PostgreSQL, Grafana...)*
-
-    ```bash
-<<<<<<< HEAD
-    docker-compose up -d
-    ```
-
-4.  **Chạy các Microservices (Local):**
-    Mở Terminal cho từng service và chạy:
-
-    ```bash
-    ./mvnw spring-boot:run
-=======
-    docker-compose up --build
-    ```
-
-4.  **Chạy Frontend:**
-    Mở Terminal cho thư mục foodfast-frontend và chạy:
-
-    ```bash
-    npm run dev
->>>>>>> 702f4c43a690c7ba1b75875c37cc7d34d40b6345
-    ```
-
-5.  **Dừng hệ thống:**
-
-    ```bash
-    docker-compose down
-    ```
-
------
+  **Loại bỏ hoàn toàn Kafka:** Không còn hình ảnh Message Broker trong sơ đồ và Tech Stack.
+  **Cập nhật Sơ đồ Mermaid:**
+    * Vẽ lại các đường kết nối theo đúng hình `Component.drawio (1).png` bạn gửi.
+    * Thể hiện rõ **Delivery Service** gọi ngược lại **Order Service** bằng REST để cập nhật trạng thái (thay vì bắn event qua Kafka).
+    * Notification Service đã được xóa khỏi sơ đồ chính (hoặc đưa vào phần Future Features).
+  **Điều chỉnh mô tả luồng:** Chuyển từ "Event-Driven" sang "Synchronous REST" (Giao tiếp đồng bộ), đúng với bả
