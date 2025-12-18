@@ -77,7 +77,7 @@ graph TD
     Delivery --> DB
 
 
-##  Công nghệ sử dụng
+## Công nghệ sử dụng
 
 | Hạng mục | Công nghệ | Chi tiết |
 | :--- | :--- | :--- |
@@ -91,7 +91,7 @@ graph TD
 
 ---
 
-##  Các Microservices Chính
+## Các Microservices Chính
 Hệ thống bao gồm 6 dịch vụ nghiệp vụ cốt lõi:
 
 * **User Service:** Quản lý đăng ký, đăng nhập và hồ sơ cá nhân.
@@ -107,7 +107,7 @@ Hệ thống bao gồm 6 dịch vụ nghiệp vụ cốt lõi:
 
 ---
 
-##  Luồng Nghiệp vụ 
+## Luồng Nghiệp vụ 
 
 ### 1. Quy trình Đặt hàng
 Quy trình được thực hiện tuần tự để đảm bảo tính chính xác:
@@ -125,7 +125,7 @@ Quy trình được thực hiện tuần tự để đảm bảo tính chính x�
 
 ---
 
-##  Roadmap & Future Features
+## Roadmap & Future Features
 
 - [x] Triển khai kiến trúc Microservices cơ bản (REST).
 - [x] Tích hợp Shared Database MongoDB.
