@@ -32,24 +32,24 @@ Hệ thống được xây dựng theo kiến trúc **Microservices RESTful**, t
 ```mermaid
 graph TD
     subgraph Client_Layer
-        Client[" Client App"]
+        Client["Client App"]
     end
 
     subgraph Access_Control
-        Gateway(" API Gateway<br>")
+        Gateway("API Gateway")
     end
 
     subgraph Core_Services [Backend Microservices System]
-        User[" User Service<br>"]
-        Product[" Product Service<br>"]
-        Order[" Order Service<br>"]
-        Branch[" Branch Service<br>"]
-        Payment[" Payment Service<br>"]
-        Delivery[" Delivery Service<br>"]
+        User["User Service"]
+        Product["Product Service"]
+        Order["Order Service"]
+        Branch["Branch Service"]
+        Payment["Payment Service"]
+        Delivery["Delivery Service"]
     end
 
     subgraph Data_Layer
-        DB[(" Shared MongoDB Cluster")]
+        DB[("Shared MongoDB Cluster")]
     end
 
     %% Client requests
