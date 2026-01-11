@@ -27,7 +27,6 @@
 Hệ thống được xây dựng theo kiến trúc **Microservices RESTful**, trong đó các dịch vụ giao tiếp trực tiếp với nhau thông qua HTTP Request (Đồng bộ). Mọi yêu cầu từ phía người dùng đều được kiểm soát và điều hướng qua **API Gateway**.
 
 ### Sơ đồ Component
-*(Mô phỏng lại dựa trên thiết kế thực tế của nhóm)*
 
 ```mermaid
 graph TD
